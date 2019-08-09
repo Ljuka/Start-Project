@@ -1,0 +1,56 @@
+/* 
+  Localizable.strings
+  onepower-ios
+
+  Created by Ljubo Maricevic on 24/07/2019.
+  Copyright © 2019 Ljubo Maricevic. All rights reserved.
+*/
+
+
+"select_offer" = "Passa a ONE";
+"close" = "Chiudi";
+"activate" = "Attiva";
+"read_more" = "leggi di più";
+"lets_start" = "Iniziamo";
+"upload_bill_description" = "Hai con te la tua ultima bolletta?";
+"i_have_the_bill" = "Ho la bolletta";
+"fill_photo_description" = "Carica la tua bolletta come file PDF o tramite foto";
+"i_don_t_have_the_bill" = "Non ho la bolletta";
+"fill_manually_description" = "Non ti preoccupare, puoi inserire i tuoi dati manualmente";
+"insert_your_data" = "I tuoi dati personali";
+"name" = "Nome";
+"surname" = "Cognome";
+"e_mail" = "E-mail";
+"personal_data_consent_1" = "Future iniziative promozionali curate da ONE POWER & GAS S.R.L";
+"personal_data_consent_2" = "Analisi e ricerche di mercato effettuate direttamente da ONE POWER & GAS S.R.L o attraverso società terze";
+"personal_data_consent_3" = "Future iniziative promozionali curate da altre imprese";
+"read_privacy_policy" = "Clicca qui per leggere l\'informativa privacy di One Power & Gas";
+"consents" = "Consensi";
+"consent_mandatory" = "Consenso al trattamento dei dati per l'adempimento degli obblighi contrattuali";
+"consent_optional" = "Consenso al trattamento dei dati per finalità di marketing";
+"next" = "Avanti";
+"url_mandatory_consent" = "https://s3.eu-central-1.amazonaws.com/repository.web/baket/PRJ-30005-OnePower/pdf-docs/dati-clienti-1-it.pdf";
+"url_optional_consent" = "https://s3.eu-central-1.amazonaws.com/repository.web/baket/PRJ-30005-OnePower/pdf-docs/dati-clienti-2-it.pdf";
+"choose_supply_type" = "Scegli tipologia di fornitura";
+"energy" = "Luce";
+"gas" = "Gas";
+"dual_fuel" = "Gas&Luce";
+"home_info" = "Informazioni sulla casa";
+"how_many_ppl_live" = "Quante persone vivono a casa?";
+"how_big_home" = "Quanto è grande la tua casa?";
+"less_than_50" = "meno di 50 mq";
+"50_100" = "50-100 mq";
+"over_100" = "oltre 100 mq";
+"over_150" = "oltre 150 mq";
+"do_you_have_appliances" = "Possiedi uno tra i seguenti elettrodomestici?";
+"dryer" = "Asciugatrice";
+"dishwasher" = "Lavastoviglie";
+"electric_boiler" = "Boiler elettrico";
+"use_gas_for" = "Per cosa utilizzi il gas?";
+"heating" = "Riscaldamento";
+"hot_water" = "Aqua calda";
+"cooking" = "Cucina";
+"pod_title" = "Inserisci il tuo POD";
+"pdr_title" = "Inserisci il tuo PDR";
+"pod_error" = "POD non valido";
+"pdr_error" = "PDR non valido";
