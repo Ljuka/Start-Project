@@ -1,21 +1,26 @@
 //
 //  AppDelegate.swift
-//  Start Project
+//  onepower-ios
 //
-//  Created by Ljubo Maricevic on 09/08/2019.
+//  Created by Ljubo Maricevic on 11/07/2019.
 //  Copyright © 2019 Ljubo Maricevic. All rights reserved.
 //
 
 import UIKit
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
-
+    let window: UIWindow! = UIWindow()
+    let router = AppCoordinator().anyRouter
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        router.setRoot(for: window)
+        //        fabric
+        Fabric.with([Crashlytics.self])
         return true
     }
 

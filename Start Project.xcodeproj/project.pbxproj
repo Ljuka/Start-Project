@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FFF2B0722FD548F00B64F3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF2B0622FD548F00B64F3C /* AppDelegate.swift */; };
+		7FEAD4AC22FD9926001D643F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEAD4AB22FD9926001D643F /* AppDelegate.swift */; };
 		7FFF2B1122FD549000B64F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFF2B0F22FD549000B64F3C /* LaunchScreen.storyboard */; };
 		7FFF2B1C22FD549000B64F3C /* Start_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF2B1B22FD549000B64F3C /* Start_ProjectTests.swift */; };
 		7FFF2B2822FD5C7900B64F3C /* version_number.sh in Resources */ = {isa = PBXBuildFile; fileRef = 7FFF2B2722FD5C7900B64F3C /* version_number.sh */; };
@@ -69,8 +69,8 @@
 
 /* Begin PBXFileReference section */
 		20D5D5C3227E3EF35B500E28 /* Pods-Start ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Start ProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-Start ProjectTests/Pods-Start ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FEAD4AB22FD9926001D643F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FFF2B0322FD548F00B64F3C /* Start Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Start Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FFF2B0622FD548F00B64F3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FFF2B1022FD549000B64F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FFF2B1722FD549000B64F3C /* Start ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Start ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFF2B1B22FD549000B64F3C /* Start_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start_ProjectTests.swift; sourceTree = "<group>"; };
@@ -185,8 +185,8 @@
 				7FFF2B4A22FD5D4D00B64F3C /* Models */,
 				7FFF2B5822FD5D7200B64F3C /* Util */,
 				7FFF2B7822FD5D8000B64F3C /* UI */,
-				7FFF2B0622FD548F00B64F3C /* AppDelegate.swift */,
 				7FFF2B0F22FD549000B64F3C /* LaunchScreen.storyboard */,
+				7FEAD4AB22FD9926001D643F /* AppDelegate.swift */,
 				7FFF2BCF22FD5DE600B64F3C /* Info.plist */,
 			);
 			path = "Start Project";
@@ -546,6 +546,7 @@
 				7FFF2B6922FD5D7200B64F3C /* AccessTokenAdapter.swift in Sources */,
 				7FFF2B4F22FD5D4D00B64F3C /* Order.swift in Sources */,
 				7FFF2B6F22FD5D7200B64F3C /* StringExstensions.swift in Sources */,
+				7FEAD4AC22FD9926001D643F /* AppDelegate.swift in Sources */,
 				7FFF2B4922FD5D2D00B64F3C /* MainCoordinator.swift in Sources */,
 				7FFF2BAE22FD5D8000B64F3C /* SplashVM.swift in Sources */,
 				7FFF2B7522FD5D7200B64F3C /* Double.swift in Sources */,
@@ -553,7 +554,6 @@
 				7FFF2BAC22FD5D8000B64F3C /* SplashVC.swift in Sources */,
 				7FFF2B6C22FD5D7200B64F3C /* ViewModel.swift in Sources */,
 				7FFF2B7422FD5D7200B64F3C /* NibIdentifiable.swift in Sources */,
-				7FFF2B0722FD548F00B64F3C /* AppDelegate.swift in Sources */,
 				7FFF2B5622FD5D6100B64F3C /* AuthService.swift in Sources */,
 				7FFF2B5522FD5D6100B64F3C /* Moya.swift in Sources */,
 				7FFF2B5022FD5D4D00B64F3C /* ValidationError.swift in Sources */,
