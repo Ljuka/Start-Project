@@ -8,9 +8,6 @@
 
 import Foundation
 import UIKit
-import Localize_Swift
-import UIFontComplete
-
 class DefaultButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -79,7 +76,7 @@ class DefaultButton: UIButton {
         super.layoutSubviews()
         if imageView != nil && currentTitle != nil {
             if isUppercasedTitle{
-                self.setTitle(self.titleLabel?.text?.uppercased(), for: .normal)
+                self.setTitle(self.titleLabel?.text?.localized().uppercased(), for: .normal)
             }
             if isImageRight {
                 imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: -(imageMargin + (titleLabel?.frame.width)! * 2 + (imageView?.frame.width)!))

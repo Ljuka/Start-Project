@@ -8,7 +8,6 @@
 
 
 import UIKit
-import Localize_Swift
 import DropDown
 import RxCocoa
 import RxSwift

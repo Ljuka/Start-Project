@@ -12,7 +12,6 @@ import Moya
 
 enum AppRoute: Route{
     case splash
-//    case main(offers: [Offer])
 }
 
 class AppCoordinator: NavigationCoordinator<AppRoute> {
@@ -29,18 +28,13 @@ class AppCoordinator: NavigationCoordinator<AppRoute> {
     }
     
     override func prepareTransition(for route: AppRoute) -> NavigationTransition {
-        let animation = Animation(presentation: InteractiveTransitionAnimation.push, dismissal: InteractiveTransitionAnimation.pop)
         switch route {
         case .splash:
             let splashVC = SplashVC.instantiateFromNib()
             let viewModel: SplashVM = SplashVM(provider: provider)
             splashVC.bind(to: viewModel)
-            viewModel.router = anyRouter
+            viewModel.router = unownedRouter
             return .present(splashVC)
-//        case .main(let offers):
-//            let main = MainCoordinator(provider, offers: offers)
-//            return .present(main, animation: animation)
-
         }
     }
     

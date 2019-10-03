@@ -7,20 +7,18 @@
 //
 
 import UIKit
-import Fabric
-import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let window: UIWindow! = UIWindow()
-    let router = AppCoordinator().anyRouter
+    let router = AppCoordinator().strongRouter
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         router.setRoot(for: window)
         //        fabric
-        Fabric.with([Crashlytics.self])
+//        Fabric.with([Crashlytics.self])
         return true
     }
 

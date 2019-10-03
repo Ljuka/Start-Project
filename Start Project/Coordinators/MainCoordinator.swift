@@ -16,19 +16,13 @@ enum MainRoute: Route{
 }
 
 class MainCoordinator: NavigationCoordinator<MainRoute> {
-//    
 //    let provider: MoyaProvider<NetworkApi> = MoyaProvider<NetworkApi>(plugins: [NetworkLoggerPlugin(verbose: true)])
-////    lazy var loginVM: LoginVM = LoginVM(provider: provider)
-////    lazy var registerVM: RegisterVM = RegisterVM(provider: provider)
-//    
-//    init(_ provider: MoyaProvider<NetworkApi>, offers: [Offer]){
-//        //        self.provider = provider
-//        super.init(initialRoute: nil)
+//
+//    init(_ provider: MoyaProvider<NetworkApi>){
+//        super.init(initialRoute: ROUTE)
 //    }
 //    
 //    override func prepareTransition(for route: MainRoute) -> NavigationTransition {
-//        
-//        
 //    }
     
 }

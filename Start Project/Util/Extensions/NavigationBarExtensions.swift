@@ -10,11 +10,30 @@ import Foundation
 import UIKit
 
 extension UINavigationBar {
+    
+    func setNavigationBarColor(color: UIColor) {
+        self.backgroundColor = color
+        self.barTintColor = color
+        self.isTranslucent = false
+    }
+    
     func transparentNavigationBar() {
-        self.setBackgroundImage(nil, for: .default)
+        self.setBackgroundImage(UIImage(), for: .default)
         self.shadowImage = UIImage()
         self.isTranslucent = true
         self.backgroundColor = .clear
         self.barTintColor = .clear
+    }
+    
+    func setNavigationTextColor(color: UIColor){
+        self.tintColor = color
+    }
+    
+}
+
+extension UINavigationItem{
+    func setNavigationImageTitle(image: UIImage){
+        let imageView = UIImageView(image:image)
+        self.titleView = imageView
     }
 }

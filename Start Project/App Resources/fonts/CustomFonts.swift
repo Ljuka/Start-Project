@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIFontComplete
 
 enum CustomFonts: String, FontRepresentable {
     case montserratRegular = "Montserrat-Regular"

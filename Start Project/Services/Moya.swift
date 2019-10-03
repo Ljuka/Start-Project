@@ -13,13 +13,13 @@ import KeychainSwift
 let keychain = KeychainSwift()
 
 enum NetworkApi{
-    case getOffers(lang: String)
+    case networkApi
 }
 
 #if ENV_STAGING
-let BASE_URL = "https://onepowerapi.baket.it"
+let BASE_URL = "https://staging.example.com"
 #else
-let BASE_URL = "https://onepowerapi.baket.it"
+let BASE_URL = "https://example.com"
 #endif
 
 extension NetworkApi: TargetType{
@@ -30,8 +30,6 @@ extension NetworkApi: TargetType{
     
     var baseURL: URL {
         switch self {
-//        case .getLatLongFromGoogle(_), .reverseGeocoding(_):
-//            return URL(string: "https://maps.googleapis.com")!
         default:
             return URL(string: BASE_URL)!
         }
@@ -39,15 +37,13 @@ extension NetworkApi: TargetType{
     
     var path: String {
         switch self {
-        case .getOffers(_):
-            return "/offers"
+        case .networkApi:
+            return "/test"
         }
     }
     
     var validationType: ValidationType {
         switch self {
-//        case .login(_):
-//            return .none
         default:
             return .successCodes
         }
@@ -55,12 +51,6 @@ extension NetworkApi: TargetType{
     
     var method: Moya.Method {
         switch self {
-//        case .uploadImageOffer(_), .insertOffer(_,_,_,_,_,_,_,_,_,_,_), .register, .uploadRegistrationImage(_,_):
-//            return .post
-//        case .acceptTransaction(_), .denyTransaction(_), .editOffer(_,_,_,_,_,_,_,_,_,_,_,_):
-//            return .put
-//        case .deleteOffer(_):
-//            return .delete
         default:
             return .get
         }
@@ -68,9 +58,8 @@ extension NetworkApi: TargetType{
     
     var task: Task {
         switch self {
-        case .getOffers(let lang):
-            return .requestParameters(parameters: ["lang" : lang], encoding: URLEncoding.default)
-            
+        case .networkApi:
+            return .requestParameters(parameters: ["key" : "value"], encoding: URLEncoding.default)
         default:
             return .requestPlain
         }
